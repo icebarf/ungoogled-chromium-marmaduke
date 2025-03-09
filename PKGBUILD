@@ -1,6 +1,6 @@
 # Maintainer: Amritpal Singh amrit@tfwno.gf
 pkgname=ungoogled-chromium
-pkgver=131.0.6778.142
+pkgver=133.0.6943.146
 pkgrel=1
 pkgdesc="Ungoogled Chromium build by Marmaduke"
 arch=('x86_64')
@@ -18,7 +18,7 @@ optdepends=(
   'kwallet: support for storing passwords in KWallet on Plasma')
 provides=("chromium=$pkgver" "chromedriver=$pkgver")
 conflicts=('chromium' 'chromedriver')
-source=("${url}/releases/download/v131.6778.142-M${pkgver}-r1368529-portable-ungoogled-Lin64/ungoogled-chromium_${pkgver}_${pkgrel}.vaapi_linux.tar.xz"
+source=("${url}/releases/download/v133.6943.146-M${pkgver}-r1402768-portable-ungoogled-Lin64/ungoogled-chromium_${pkgver}_${pkgrel}.vaapi_linux.tar.xz"
     "icons.tar.xz"
     "chromium"
     "chromium.desktop"
@@ -41,7 +41,7 @@ package() {
   cp -r "${srcdir}/${pkgname}_${pkgver}_${pkgrel}.vaapi_linux" "${pkgdir}/opt/${pkgname}"
 
 }
-sha256sums=('6e180664d52e8e7b66db9a78d672c59f07b3cbc23cf413ececddc1cac76fb1fb'
+sha256sums=('1a043de5d3f66ae49fe67210b4c43a2c42abf4bfc960625add720a448e6e34e5'
             '2370165d823318defa048034eb82ed82744324821c53ccc11566e3b99111d617'
             '633fc5126baaff736f0691eb2ad98d11e348d6ca267b5b0f65f1005e44cdea5f'
             '104bbd067c2ff7583d93b1302bc6663c5af3bb2aa4f37e681a14d8ff93ee93fe')
