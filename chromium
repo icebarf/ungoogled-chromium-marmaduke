@@ -1,2 +1,2 @@
 #!/bin/sh
-/opt/ungoogled-chromium/chrome "$@"
+/opt/ungoogled-chromium/chrome --ozone-platform=wayland --enable-accelerated-video-decode --enable-features=AcceleratedVideoEncoder,AcceleratedVideoDecodeLinuxGL  "$@"
