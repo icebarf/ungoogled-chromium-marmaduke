@@ -1,5 +1,5 @@
 # Maintainer: Amritpal Singh ice@rdseed.in
-pkgname=ungoogled-chromium
+pkgname=ungoogled-chromium-marmaduke
 pkgver=150.0.7871.55
 pkgrel=1
 pkgdesc="Ungoogled Chromium build by Marmaduke"
@@ -38,11 +38,11 @@ package() {
 
   # then we finally install chromium itself
   mkdir --parents "${pkgdir}/opt"
-  cp -r "${srcdir}/${pkgname}_${pkgver}_${pkgrel}.vaapi_linux" "${pkgdir}/opt/${pkgname}"
+  cp -r "${srcdir}/chromium_${pkgver}_${pkgrel}.vaapi_linux" "${pkgdir}/opt/${pkgname}"
 
 }
 
 sha256sums=('5ccd8246a02fa45b2aab6a41ba7d2ee104fd8cf0f0f17eae5ba52488f0ffea34'
             '2370165d823318defa048034eb82ed82744324821c53ccc11566e3b99111d617'
-            '7d3b97198fa227f5ba497b1128aef008c41a6d0264fd3548f0e86a4a2d63fc3b'
-            '104bbd067c2ff7583d93b1302bc6663c5af3bb2aa4f37e681a14d8ff93ee93fe')
+            '0934981233cd2a1831343dd8607075a51a5001bdeb2bbd6f4fc7ea453507121c'
+            'bc924f38bfd679ec4aba047d5115128d217dba145d4cbfa1d3e78f50f5e3848d')

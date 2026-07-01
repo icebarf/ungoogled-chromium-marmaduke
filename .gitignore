@@ -2,3 +2,5 @@ icons/
 *.tar.*
 *.log*
 !/icons.tar.xz
+pkg
+src
